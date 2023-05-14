@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="buttonTheme">
+        <item name="android:layout_marginStart">@dimen/_16sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+    <style name="textTheme">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/filledBlack</item>
+    </style>
+
+    <style name="bigTextTheme" parent="textTheme">
+        <item name="android:textSize">@dimen/_17sdp</item>
+    </style>
+</resources>

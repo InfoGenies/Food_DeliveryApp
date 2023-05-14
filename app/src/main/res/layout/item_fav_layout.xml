@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="restaurantItem"
+            type="com.example.fooddelivery.models.Restaurant" />
+
+        <variable
+            name="image"
+            type="android.widget.ImageView" />
+
+        <variable
+            name="restaurantListener"
+            type="com.example.fooddelivery.adapters.FavoriteAdapter.MainFavoriteListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/colorPrimaryDark"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/item_recent_imageview"
+                    imageUrl="@{restaurantItem.imageRestaurant}"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/item_info"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:id="@+id/item_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/item_recent_imageview"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/item_recent_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:maxLines="1"
+                            android:text="@{restaurantItem.restaurantName}"
+                            android:textColor="@color/Black" />
+
+                        <ImageView
+                            android:id="@+id/item_recent_save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@{restaurantItem.inFav? @drawable/saved : @drawable/not_save}"
+                            android:onClick="@{()-> restaurantListener.onFavClicked(restaurantItem,image)}"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/item_recent_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+
+                            android:drawablePadding="@dimen/_3sdp"
+                            android:fontFamily="@font/poppins"
+                            android:maxEms="20"
+                            android:text="@{restaurantItem.restaurantType}"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_10ssp"
+                            app:drawableStartCompat="@drawable/type_resturant" />
+
+                        <TextView
+                            android:id="@+id/item_recent_distance"
+                            android:text="@{restaurantItem.distance}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:drawablePadding="@dimen/_3sdp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_10ssp"
+                            app:drawableStartCompat="@drawable/pin"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/item_recent_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_3sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:maxLines="1"
+                            android:text="@{Double.toString(restaurantItem.rateCount)}"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/_10ssp"
+                            app:drawableStartCompat="@drawable/start_icon" />
+
+                        <TextView
+                            android:id="@+id/item_recent_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_3sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textSize="@dimen/_10ssp"
+
+                            app:drawableStartCompat="@drawable/clock" />
+
+                        <TextView
+                            android:id="@+id/item_recent_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_3sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:maxLines="1"
+                            android:onClick="@{()-> restaurantListener.onCallClicked(restaurantItem.contact)}"
+
+                            android:text="Contact"
+                            android:textSize="@dimen/_10ssp"
+                            app:drawableLeftCompat="@drawable/phone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/item_recent_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

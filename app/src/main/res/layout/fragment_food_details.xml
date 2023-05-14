@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<data>
+    <variable
+        name="food"
+        type="com.example.fooddelivery.models.Product" />
+    <variable
+        name="fragment"
+        type="com.example.fooddelivery.fragment.FoodDetailsFragment" />
+</data>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_25sdp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imageRestaurantHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/layoutMarker"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/sliderViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_270sdp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        imageUrl="@{food.image}"
+                        android:src="@drawable/hamburger_french"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/viewFadingEdge"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"
+                        android:background="@drawable/background_fading_edge"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@id/sliderViewPager" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_top_tags"
+                        android:gravity="top"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/backIcon"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20ssp"
+                            android:layout_margin="@dimen/_6sdp"
+                            android:onClick="@{()-> fragment.backPressFragment()}"
+                            android:src="@drawable/back_black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/rate"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_margin="@dimen/_6sdp"
+                                android:src="@drawable/start_icon"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/search"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/colorPrimaryDark" />
+
+                            <ImageView
+                                android:id="@+id/search"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20ssp"
+                                android:layout_margin="@dimen/_6sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/search"
+                                app:layout_constraintEnd_toStartOf="@+id/viewImageRestaurant"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/colorPrimaryDark" />
+
+                            <ImageView
+                                android:id="@+id/viewImageRestaurant"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20ssp"
+                                android:layout_margin="@dimen/_6sdp"
+                                android:src="@drawable/view_image"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:tint="@color/colorPrimaryDark" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutMarker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-40dp"
+                    android:background="@drawable/round_back_white"
+                    android:padding="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageRestaurantHeader"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="-25dp"
+                        android:background="@drawable/bg_rounded_darkcolor_outline"
+                        android:gravity="center_vertical|center_horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btnMark"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerInParent="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="@{()-> fragment.saveFoodInFavorite()}"
+                            android:src="@drawable/not_save"
+                            app:tint="@color/colorPrimaryDark" />
+
+                    </RelativeLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/foodContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutMarker">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/restaurantContentInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/foodName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@{food.productName}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18ssp"
+                            app:layout_constraintEnd_toStartOf="@+id/foodPrice"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/foodPrice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:text="@{Integer.toString(food.productPrice)}"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_18ssp"
+                            app:drawableEndCompat="@drawable/money_black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/foodName">
+
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:text="@{Double.toString(food.rating)}"
+                                android:textSize="@dimen/_10ssp"
+                                app:drawableStartCompat="@drawable/start_icon" />
+
+
+                            <TextView
+                                android:id="@+id/foodTime"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:text="30 min"
+                                android:textSize="@dimen/_10ssp"
+                                app:drawableStartCompat="@drawable/clock"
+                                app:drawableTint="@color/Redgrade2" />
+
+                            <TextView
+                                android:id="@+id/fooddeleivery"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:maxLines="1"
+                                android:text="Free Delivery"
+                                android:textSize="@dimen/_10ssp"
+                                app:drawableStartCompat="@drawable/money" />
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraint"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/restaurantContentInfo">
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_2sdp"
+                            android:background="@color/gray"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/lean1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp"
+                            app:layout_constraintBottom_toTopOf="@id/view2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/detailsProduct"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/rta_regular"
+                                    android:text="Details"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <View
+                                    android:id="@+id/pointDetails"
+                                    android:layout_width="@dimen/_8sdp"
+                                    android:layout_height="@dimen/_8sdp"
+                                    android:background="@drawable/circle_points" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="@dimen/_2sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:background="@color/gray"
+                                android:layout_gravity="center_vertical"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/countPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins"
+                                    android:gravity="center_horizontal"
+                                    android:text="0.0$"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/pointReview"
+                                    android:visibility="gone"
+                                    android:layout_width="@dimen/_8sdp"
+                                    android:layout_height="@dimen/_8sdp"
+                                    android:background="@drawable/circle_points" />
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_2sdp"
+                            android:background="@color/gray"
+                            app:layout_constraintBottom_toTopOf="@+id/textDescripition"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/lean1" />
+
+                        <TextView
+                            android:id="@+id/textDescripition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:ellipsize="end"
+                            android:text="@{food.productDescription}"
+                            android:fontFamily="@font/poppins_bold"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:maxLines="4"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_11ssp"
+                            app:layout_constraintTop_toBottomOf="@id/view2" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textDescripition">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:background="@drawable/add_to_cart_layout"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_10sdp">
+
+                                <ImageView
+                                    android:id="@+id/min_tot_cart"
+                                    android:layout_width="@dimen/_33sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_weight="1"
+                                    android:onClick="@{()-> fragment.changeProductQuantity(false)}"
+                                    android:src="@drawable/minus" />
+
+                                <EditText
+                                    android:id="@+id/productQuantity_EditText"
+                                    android:layout_width="@dimen/_33sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:gravity="center"
+                                    android:background="@drawable/card_view_shape"
+                                    android:inputType="numberSigned"
+                                    android:maxLines="1"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="0"
+                                    android:textSize="@dimen/_15ssp" />
+
+                                <ImageView
+                                    android:id="@+id/add"
+                                    android:layout_width="@dimen/_33sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:src="@drawable/add"
+                                    android:onClick="@{()-> fragment.changeProductQuantity(true)}"
+
+
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="@drawable/add_to_cart_layout2"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_10sdp"
+                                android:onClick="@{()-> fragment.saveFoodInCarte()}"
+                                >
+
+                                <TextView
+                                    android:id="@+id/add_to_cart"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Add To Cart"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:textStyle="bold"
+                                    />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</layout>

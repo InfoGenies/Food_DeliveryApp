@@ -1,0 +1,70 @@
+<resources>
+    <string name="google_maps_api_key">AIzaSyBNdZA3fbBnlO4a3hmX0d53CeRo9Ftd79Q</string>
+
+    <string name="app_name">ShopeFoodApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="backOnline">Back Online</string>
+    <string name="connectionLost">Connection Lost!</string>
+    <string name="welcomeMessage">Welcome </string>
+    <string name="welcomeSecondMessage">To Our Restaurant</string>
+    <string name="get_started">Get Started</string>
+    <string name="accountCreatedSuccessfully">Account Created Successfully</string>
+    <string name="accountUpdatedSuccessfully">Account Updated Successfully</string>
+    <string name="errorCreateAccount">Error Create Account</string>
+    <string name="errorMessage">  An error occurred, Please try again later  </string>
+    <string name="time">Time</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="please_check_internet_connection">Please Check Internet Connection</string>
+    <string name="please_add_your_phone_number_to_continue">Please add your phone number to continue</string>
+    <string name="please_add_a_valid_phone_number">Please add a valid ohone number</string>
+    <string name="countDown">00:%1$02d</string>
+    <string name="type_verification_code_first">Please type verification code first</string>
+    <string name="addUserName" />
+    <string name="addUsearName">Add Ur Name Please</string>
+    <string name="addUserImage">Add ur Image Please</string>
+    <string name="addUserLocation">"Add ur Location Please"</string>
+    <string name="go_to_settings">Go To Settings</string>
+    <string name="location_permission_attention">Location Permission Attention</string>
+    <string name="confirm_location">Confirme Your Loocation</string>
+    <string name="get_my_location">Locate me</string>
+    <string name="cannotMakeGPSRequest">Cannot Make GPS Request</string>
+    <string name="enableGPS">Enable GPS</string>
+    <string name="enable">Enable</string>
+    <string name="InsertSucces">Inserting Successfully</string>
+    <string name="UpdateSucces">Updating Successfully</string>
+    <string name="productQuantity">%s, Price</string>
+    <string name="price">%.2f$</string>
+    <string name="back_to_home">Back To Home</string>
+    <string name="track_order">Track order</string>
+    <string name="tryAgain">Try Again</string>
+    <string name="successful_order_message">Your items has been placed and is on its way to begin processed.</string>
+    <string name="fail_order_message">Something went wrong. Please try Again.</string>
+    <string name="successful_order_title">Your Order has been accepted</string>
+    <string name="fail_order_title">Oops! Order Failed</string>
+    <string name="tracking_order">Tracking Order:</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="order_placed_message">We have received your order</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="order_confirmed_message">Your order has been confirmed</string>
+    <string name="order_shipped">Order Shipped</string>
+    <string name="order_shipped_message">Your order is on its way</string>
+    <string name="order_delivered">Order Delivered</string>
+    <string name="order_delivered_message">Your order is now in your hands</string>
+    <string name="logOutMessage">You have logged out successfully</string>
+    <string name="my_orders">My Orders</string>
+    <string name="order_num">Order Num: </string>
+    <string name="order_date">Order Date: </string>
+    <string name="order_location">Order Location: </string>
+    <string name="order_products">Order Products: </string>
+    <string name="order_status">Order Status: </string>
+    <string name="orderProductsWithCost">%s products - %.2f$</string>
+    <string name="product_name">Name:</string>
+    <string name="product_quantity">Quantity:</string>
+    <string name="product_total_price">Total Price:</string>
+    <string name="ok">OK</string>
+    <string name="locationChanged">Your location changed successfully!</string>
+    <string name="myLocation">My Location</string>
+
+
+</resources>
