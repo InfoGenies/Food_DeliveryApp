@@ -7,5 +7,6 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 
 # Built With ![technical-service](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/17f6b7f6-2e0f-453f-bb0c-1be8fa0fa464)
 
-[kotlin](https://kotlinlang.org/) : A modern programming language for Android development
+* [kotlin](https://kotlinlang.org/) : A modern programming language for Android development
+* [Android Architecture Components](https://developer.android.com/topic/architecture) : Collection of libraries that help you design robust, testable, and maintainable apps
 
