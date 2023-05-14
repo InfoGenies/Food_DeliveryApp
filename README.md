@@ -25,5 +25,5 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 ## Screens
 Login Page | SignUp Page | Home Page | Home Page2 | Shop Page | Shop Page2 | Bag Page | Visual Search Page
 --- | --- | --- |--- |--- |--- |--- |---
- | ![](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/6812e78d-3802-4b14-987b-6af73ffd387b)
+ | ![]([https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/6812e78d-3802-4b14-987b-6af73ffd387b](https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Flogine.jpg?alt=media&token=b4f19b7a-ba11-4d21-a2a6-902d824f9776))
 ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/SignUp_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Home_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Home_activity2.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Shop.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Shop2.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Bag_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Visual_search_activity.png) 
