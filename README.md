@@ -2,7 +2,9 @@
 An E-Commerce android application that makes users can demand theire food easly
 # Architecture
 
-MVVM stands for Model-View-ViewModel, which is a design pattern used in software development, particularly in the context of user interfaces (UI). MVVM separates the concerns of presentation logic from the UI, resulting in a more modular and maintainable codebase.![mvvm-architecture-app-in-android](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/09a368a4-a565-430e-b49d-c364b41b1d46)
+MVVM stands for Model-View-ViewModel, which is a design pattern used in software development, particularly in the context of user interfaces (UI). MVVM separates the concerns of presentation logic from the UI, resulting in a more modular and maintainable codebase.
+
+![mvvm-architecture-app-in-android](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/09a368a4-a565-430e-b49d-c364b41b1d46)
 
 # Built With ![technical-service](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/17f6b7f6-2e0f-453f-bb0c-1be8fa0fa464)
 
