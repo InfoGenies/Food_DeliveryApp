@@ -23,7 +23,15 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 * [Firebase](https://firebase.google.com/) : Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure
 * [Lottie](https://github.com/airbnb/lottie-android) : Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile.
 ## Screens
-Login Page | SignUp Page | Home Page | Home Page2 | Shop Page | Shop Page2 | Bag Page | Visual Search Page
---- | --- | --- |--- |--- |--- |--- |---
- | ![]([https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/6812e78d-3802-4b14-987b-6af73ffd387b](https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Flogine.jpg?alt=media&token=b4f19b7a-ba11-4d21-a2a6-902d824f9776))
-![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/SignUp_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Home_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Home_activity2.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Shop.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Shop2.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Bag_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Visual_search_activity.png) 
+<p float="left">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Flogine.jpg?alt=media&token=b4f19b7a-ba11-4d21-a2a6-902d824f9776" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome1.jpg?alt=media&token=be81d512-bcc1-4ff5-964a-0c9a27cabeea" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome2.jpg?alt=media&token=f4001b39-27a1-43bc-aefd-cdb9a5823009" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome3.jpg?alt=media&token=dabe507f-7d48-4138-8922-6707be303981" width="200">
+</p>
+<p float="left">
+<img src="" width="200">
+<img src="" width="200">
+<img src="" width="200">
+<img src="" width="200">
+</p>
