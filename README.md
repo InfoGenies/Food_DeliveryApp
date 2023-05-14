@@ -23,3 +23,7 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 * [Firebase](https://firebase.google.com/) : Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure
 * [Lottie](https://github.com/airbnb/lottie-android) : Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile.
 ## Screens
+Login Page | SignUp Page | Home Page | Home Page2 | Shop Page | Shop Page2 | Bag Page | Visual Search Page
+--- | --- | --- |--- |--- |--- |--- |---
+ | ![](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/6812e78d-3802-4b14-987b-6af73ffd387b)
+![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/SignUp_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Home_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Home_activity2.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Shop.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Shop2.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Bag_activity.png) | ![](https://github.com/JahidHasanCO/BuyNow-App/blob/master/ART/Visual_search_activity.png) 
