@@ -25,4 +25,4 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 | Column 1 | Column 2 | Column 3 | Column 4 | Column 5 | Column 6 |
 |----------|----------|----------|----------|----------|----------|
 | Header 1 | Header 2 | Header 3 | Header 4 | Header 5 | Header 6 |
-| Data 1   | Data 2   | Data 3   | Data 4   | Data 5   | Data 6   |
+
