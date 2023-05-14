@@ -23,3 +23,7 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 * [Firebase](https://firebase.google.com/) : Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure
 * [Lottie](https://github.com/airbnb/lottie-android) : Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile.
 | Column 1 | Column 2 | Column 3 | Column 4 | Column 5 | Column 6 |
+|----------|----------|----------|----------|----------|----------|
+| Name | Age | Occupation | Location | Interests | Hobbies |
+| John Doe | 30 | Software Engineer | San Francisco, CA | Programming | Reading |
+| Jane Doe | 25 | Graphic Designer | New York, NY | Art | Photography |
