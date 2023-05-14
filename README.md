@@ -24,14 +24,33 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 * [Lottie](https://github.com/airbnb/lottie-android) : Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile.
 ## Screens
 <p float="left">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fwelcome.jpg?alt=media&token=66ee4ca3-a2fb-42ef-879b-7f4abbbe9a11" width="200">
 <img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Flogine.jpg?alt=media&token=b4f19b7a-ba11-4d21-a2a6-902d824f9776" width="200">
-<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome1.jpg?alt=media&token=be81d512-bcc1-4ff5-964a-0c9a27cabeea" width="200">
-<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome2.jpg?alt=media&token=f4001b39-27a1-43bc-aefd-cdb9a5823009" width="200">
-<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome3.jpg?alt=media&token=dabe507f-7d48-4138-8922-6707be303981" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fphone_authv2.jpg?alt=media&token=e35ea3f9-2a0d-4f9f-8cab-1daef78b0e08" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fphone_auth.jpg?alt=media&token=db5b7912-276f-47c8-902d-126b868d9e23" width="200">
 </p>
 <p float="left">
-<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fphone_auth.jpg?alt=media&token=db5b7912-276f-47c8-902d-126b868d9e23" width="200">
 <img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Finfo_user.jpg?alt=media&token=064a304d-e7d0-428f-97f3-b330a86da5fc" width="200">
 <img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Faddress.jpg?alt=media&token=ed8103fc-01b5-4236-a860-58cb8921cb82" width="200">
 <img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fsaving_info.jpg?alt=media&token=a21da4ed-c4f1-469c-8045-673e1831cc38" width="200">
+   <img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome2.jpg?alt=media&token=f4001b39-27a1-43bc-aefd-cdb9a5823009" width="200">
+</p>
+<p float="left">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome3.jpg?alt=media&token=dabe507f-7d48-4138-8922-6707be303981" width="200">
+   <img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/food%2Fhome1.jpg?alt=media&token=be81d512-bcc1-4ff5-964a-0c9a27cabeea" width="200">
+   <img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fdetail_food.jpg?alt=media&token=82af4e05-8ef5-4ab8-8e06-2499bdca0612" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fcart.jpg?alt=media&token=7d6a81ce-4a03-436f-ba98-4d5edf3c5b5f" width="200">
+</p>
+<p float="left">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fcheck_out.jpg?alt=media&token=a1ddb0f3-8121-4b92-90c8-dcf94d9a2b31" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Faccept_order.jpg?alt=media&token=5588e14a-d8e8-42a0-98f9-af7877cca4e3" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Ftrack_order.jpg?alt=media&token=e8967db0-b5e3-41f7-9ad0-bfc5fdc689f2" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Ffav2.jpg?alt=media&token=708962c7-8996-4318-8033-df1f752a8eb4" width="200">
+</p>
+
+<p float="left">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Ffav1.jpg?alt=media&token=1c301578-c8f2-4ed2-8069-29d388effbfb" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fprofil.jpg?alt=media&token=f540c28c-c242-4af4-b97e-8d892eb352a9" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fmy_orders.jpg?alt=media&token=6f92f5da-c1c8-4871-ae4d-7c01c39ca719" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/fooddelivery-ab491.appspot.com/o/Screen%2Fmy_specific_order.jpg?alt=media&token=60ccfe43-a5f8-4582-8046-cf3813c33291" width="200">
 </p>
