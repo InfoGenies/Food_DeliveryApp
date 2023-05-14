@@ -22,3 +22,4 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 * [Google Maps SDK](https://developers.google.com/maps/documentation/android-sdk) : Build dynamic, interactive, customized maps, location, and geospatial experiences for your Android apps.
 * [Firebase](https://firebase.google.com/) : Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure
 * [Lottie](https://github.com/airbnb/lottie-android) : Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile.
+| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 | Column 6 |
