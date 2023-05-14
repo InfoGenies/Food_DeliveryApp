@@ -1,12 +1,12 @@
 # Food_DeliveryApp
 An E-Commerce android application that makes users can demand theire food easly
-# Architecture
+## Architecture
 
 MVVM stands for Model-View-ViewModel, which is a design pattern used in software development, particularly in the context of user interfaces (UI). MVVM separates the concerns of presentation logic from the UI, resulting in a more modular and maintainable codebase.
 
 ![mvvm-architecture-app-in-android](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/09a368a4-a565-430e-b49d-c364b41b1d46)
 
-# Built With ![technical-service](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/17f6b7f6-2e0f-453f-bb0c-1be8fa0fa464)
+## Built With ![technical-service](https://github.com/InfoGenies/Food_DeliveryApp/assets/133220437/17f6b7f6-2e0f-453f-bb0c-1be8fa0fa464)
 
 * [kotlin](https://kotlinlang.org/) : A modern programming language for Android development
 * [Android Architecture Components](https://developer.android.com/topic/architecture) : Collection of libraries that help you design robust, testable, and maintainable apps .
@@ -21,4 +21,4 @@ MVVM stands for Model-View-ViewModel, which is a design pattern used in software
 * [Glide](https://github.com/bumptech/glide) : Glide is a fast and efficient open source media management and image loading framework for Android that wraps media decoding, memory and disk caching, and resource pooling into a simple and easy to use interface.
 * [Google Maps SDK](https://developers.google.com/maps/documentation/android-sdk) : Build dynamic, interactive, customized maps, location, and geospatial experiences for your Android apps.
 * [Firebase](https://firebase.google.com/) : Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure
-
+* [Lottie](https://github.com/airbnb/lottie-android) : Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile
