@@ -36,20 +36,27 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
     }
 
     private fun observeNetworkConnection() {
-        connectionLiveData.observe(this, Observer {isInternetAvailable->
-            if(isInternetAvailable && !firstCheckInternetConnection){
-                Snackbar.make(binding.parentLayout, getString(R.string.backOnline), Snackbar.LENGTH_SHORT)
+        connectionLiveData.observe(this, Observer { isInternetAvailable ->
+            if (isInternetAvailable && !firstCheckInternetConnection) {
+                Snackbar.make(
+                    binding.parentLayout,
+                    getString(R.string.backOnline),
+                    Snackbar.LENGTH_SHORT
+                )
                     .setBackgroundTint(getColor(R.color.green))
                     .show()
-            }else if(!isInternetAvailable){
-                Snackbar.make(binding.parentLayout, getString(R.string.connectionLost), Snackbar.LENGTH_SHORT)
+            } else if (!isInternetAvailable) {
+                Snackbar.make(
+                    binding.parentLayout,
+                    getString(R.string.connectionLost),
+                    Snackbar.LENGTH_SHORT
+                )
                     .setBackgroundTint(getColor(R.color.red))
                     .show()
             }
             firstCheckInternetConnection = false
         })
     }
-
 
 
     private fun initBottomNavigationView() {
@@ -66,8 +73,10 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
         arguments: Bundle?
     ) {
         when (destination.id) {
-            R.id.navigation_home, R.id.navigation_cart,
-            R.id.navigation_saves, R.id.navigation_profile -> showBottomNav()
+            R.id.navigation_home,
+            R.id.navigation_cart,
+            R.id.navigation_saves,
+            R.id.navigation_profile -> showBottomNav()
             else -> hideBottomNav()
         }
     }

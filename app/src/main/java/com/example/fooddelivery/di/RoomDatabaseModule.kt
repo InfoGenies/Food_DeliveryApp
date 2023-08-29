@@ -11,6 +11,8 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
+
+// we are juste install this dependency in all the app so when the the app finished the dependency is also finished
 @Module
 @InstallIn(SingletonComponent::class)
 class RoomDatabaseModule {

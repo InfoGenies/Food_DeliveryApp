@@ -102,7 +102,7 @@
 
             <EditText
                 android:id="@+id/productQuantity_EditText"
-                android:layout_width="@dimen/_38sdp"
+                android:layout_width="48dp"
                 android:layout_height="@dimen/_38sdp"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:afterTextChanged="@{(text) -> adapter.onQuantityTextChanged(text, carteItem, cartProductPrice)}"

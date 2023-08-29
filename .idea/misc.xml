@@ -63,7 +63,7 @@
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/auth_google_button.xml" value="0.20416666666666666" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/explain_permission_dialog_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_auth.xml" value="0.20416666666666666" />
-        <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
+        <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_change_user_info.xml" value="0.20416666666666666" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_check_code_auth.xml" value="0.20416666666666666" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_check_out_bottom_sheet_dialog.xml" value="0.19635416666666666" />
@@ -73,7 +73,7 @@
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_food_details.xml" value="0.18" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_google_auth.xml" value="0.20416666666666666" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_history_orders.xml" value="0.1722488038277512" />
-        <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_locate_user_location.xml" value="0.18" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_my_orders.xml" value="0.1" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_notification.xml" value="0.19010416666666666" />
@@ -89,14 +89,14 @@
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_specific_order.xml" value="0.1" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_success_dialog.xml" value="0.18" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_track_orders.xml" value="0.22" />
-        <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_welcome.xml" value="0.18" />
+        <entry key="..\:/FoodDelivery/app/src/main/res/layout/fragment_welcome.xml" value="0.1" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/historyorder_item_rv_layout.xml" value="0.18" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_cart.xml" value="0.33" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_fav_layout.xml" value="0.25" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_filter_food_layout.xml" value="0.19635416666666666" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_food_layout.xml" value="0.2" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_order_layout.xml" value="0.18" />
-        <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_popular_food.xml" value="0.25" />
+        <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_popular_food.xml" value="0.18" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_popular_food_placholder.xml" value="0.33" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_recent_layout.xml" value="0.19692307692307692" />
         <entry key="..\:/FoodDelivery/app/src/main/res/layout/item_restaurant_food_placholder.xml" value="0.22" />

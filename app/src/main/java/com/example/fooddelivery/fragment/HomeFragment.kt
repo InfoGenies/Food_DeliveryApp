@@ -87,7 +87,7 @@ class HomeFragment : Fragment(), PopularAdapter.MainProductListener {
             viewLifecycleOwner, Observer { userInfo ->
                 when (userInfo) {
                     is Resource.Success -> {
-                        ShowInfo(userInfo.data)
+                        showInfo(userInfo.data)
                         initViews()
                         foodViewModel.getPopularFoodList()
                         setTabs()
@@ -108,13 +108,13 @@ class HomeFragment : Fragment(), PopularAdapter.MainProductListener {
             when (productliste) {
                 is Resource.Success -> {
                     popularAdapter.addMainPopularListItems(productliste.data)
-                    HideShimmer()
+                    hideShimmer()
                 }
                 is Resource.Error -> {
                     showToast(productliste.msg.toString())
                 }
                 is Resource.Loading -> {
-                    ShowShimmer()
+                    showShimmer()
 
                 }
             }
@@ -122,18 +122,18 @@ class HomeFragment : Fragment(), PopularAdapter.MainProductListener {
 
     }
 
-    private fun ShowInfo(data: UserInfoModel?) {
+    private fun showInfo(data: UserInfoModel?) {
         println("the name is ${data!!.userName} from HomeFragment ")
     }
 
-    private fun ShowShimmer() {
+    private fun showShimmer() {
         binding.shimmer.apply {
             visibility = View.VISIBLE
             startShimmer()
         }
     }
 
-    private fun HideShimmer() {
+    private fun hideShimmer() {
         binding.shimmer.apply {
             stopShimmer()
             visibility = View.GONE
